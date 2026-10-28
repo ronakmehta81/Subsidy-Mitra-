@@ -1,4 +1,4 @@
-﻿from PIL import Image
+from PIL import Image
 import os
 
 source_dir = r"C:\Users\moxes\.gemini\antigravity\brain\906e8e26-c7dd-465a-a074-8efc114f28a6"

@@ -1,4 +1,4 @@
-﻿from PIL import Image
+from PIL import Image
 filepath = r"c:\Users\moxes\OneDrive\Desktop\Subsidy Mitra\images\subsidy-mitra-logo.jpg"
 try:
     with Image.open(filepath) as img:

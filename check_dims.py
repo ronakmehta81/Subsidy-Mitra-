@@ -1,4 +1,4 @@
-﻿import struct
+import struct
 import os
 
 def get_webp_dimensions(filepath):

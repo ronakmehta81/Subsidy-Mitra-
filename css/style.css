@@ -1,40 +1,9 @@
-﻿/* Consultez | Business Consulting HTML Template
+/* ==========================================================================
+   Subsidy Mitra - Official Stylesheet
+   Government Subsidy & Financial Advisory Consultants | Ahmedabad, Gujarat
+   https://www.subsidymitra.co.in/
+   ========================================================================== */
 
-Template Name: Consultez
-Version: 1.0.0
-License: copyright commercial
-
-/************ TABLE OF CONTENTS ***************
-1. Fonts
-2. Reset
-3. Global Settings
-4. Main Header / TwO
-5. Sticky Header
-6. Mobile Menu
-7. Section Title
-8. Main Slider
-9. Banner Section
-10. Project Section
-11. Features Section / TwO / Three / Four / Five
-12. About Section / Two
-13. Services Section / Two
-14. Call To Action / Two
-15. FAQ's Sectiom
-16. Marquee Section
-17. Fun Fact Section
-18. Testimonial Section / Two
-19. team Section
-20, Contact Section / Two
-21. Why Choose Us / Two
-22. News Section / Two
-23. Video Section
-24. Map Section
-25. Clients Section
-26. Main Footer
-**********************************************/
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Devanagari:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap");
 @import url("animate.css");
 @import url("swiper.min.css");
 @import url("jquery.fancybox.min.css");
@@ -518,7 +487,7 @@ textarea.form-control {
   background-color: var(--theme-color-dark);
 }
 .dark-layout .preloader:after {
-  background-image: url(../images/subsidy-mitra-logo.png);
+  background-image: url(../images/subsidy-mitra-logo.jpg);
 }
 .dark-layout .sticky-header {
   background-color: var(--theme-color-dark);
@@ -23697,3 +23666,37 @@ address {
 
 
 
+
+.footer-style-one .footer-left .logo img {
+  background: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: block;
+}
+
+/* --- Core Web Vitals: Minimum 48x48px Touch Targets for Mobile --- */
+.mobile-nav-toggler {
+  min-width: 48px;
+  min-height: 48px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.btn-one, .btn-two, .btn-three {
+  min-height: 48px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

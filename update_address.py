@@ -1,4 +1,4 @@
-﻿import re
+import re
 
 filepath = r"c:\Users\moxes\OneDrive\Desktop\Subsidy Mitra\contact-us.html"
 with open(filepath, 'r', encoding='utf-8') as f:

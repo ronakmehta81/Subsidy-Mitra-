@@ -1,4 +1,6 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
+Disallow: /404.html
+Disallow: /test-images.html
 
 Sitemap: https://www.subsidymitra.co.in/sitemap.xml

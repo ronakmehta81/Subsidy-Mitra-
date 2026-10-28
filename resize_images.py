@@ -1,4 +1,4 @@
-﻿try:
+try:
     from PIL import Image
     import os
 

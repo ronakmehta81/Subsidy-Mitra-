@@ -1,4 +1,4 @@
-﻿var THEMEMASCOT = {};
+var THEMEMASCOT = {};
 (function ($) {
 	("use strict");
 
@@ -429,6 +429,11 @@
 			navigation: true,
 			spaceBetween: 30,
 			speed: 1000,
+			autoplay: {
+				delay: 4000,
+				disableOnInteraction: false,
+				pauseOnMouseEnter: true,
+			},
 			navigation: {
 				nextEl: ".testimonial-next",
 				prevEl: ".testimonial-prev",
