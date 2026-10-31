@@ -1,6 +1,6 @@
 /* ==========================================================================
    Subsidy Mitra - Official Stylesheet
-   Government Subsidy & Financial Advisory Consultants | Ahmedabad, Gujarat
+   Government Subsidy Consultancy | Ahmedabad, Gujarat
    https://www.subsidymitra.co.in/
    ========================================================================== */
 
@@ -636,16 +636,10 @@ figure.image {
 }
 
 /*=======================
-    Preloader
+    Preloader (Disabled for Instant Core Web Vitals & FCP)
 =======================*/
 .preloader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: #ffffff;
+  display: none !important;
 }
 .preloader:after {
   position: absolute;
