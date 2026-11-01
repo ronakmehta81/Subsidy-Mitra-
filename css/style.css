@@ -6,10 +6,8 @@
 
 @import url("animate.css");
 @import url("swiper.min.css");
-@import url("jquery.fancybox.min.css");
 @import url("linear.css");
 @import url("fontawesome-free.css");
-@import url("fontawesome.css");
 @import url("flaticon-business.css");
 @import url("tm-bs-mp.css");
 @import url("tm-utility-classes.css");
@@ -5672,6 +5670,16 @@ padding: 20px;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
+.banner-section .banner-slider .hero-slide-1 {
+  background-image: url('../images/banner/subsidy-mitra-slider-1.webp');
+}
+@media (max-width: 767.98px) {
+  .banner-section .banner-slider .hero-slide-1 {
+    background-image: url('../images/banner/subsidy-mitra-slider-1-mobile.webp') !important;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .banner-section .arry {
     left: 2%;
