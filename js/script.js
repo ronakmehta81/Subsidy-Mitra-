@@ -764,13 +764,15 @@ var THEMEMASCOT = {};
 		});
 	}
 
-	// Background image ***
-	$("[data-background").each(function () {
-		$(this).css(
-			"background-image",
-			"url( " + $(this).attr("data-background") + "  )"
-		);
-	});
+	// Background image (lazy-load offscreen slides after critical paint)
+	setTimeout(function () {
+		$("[data-background]").each(function () {
+			$(this).css(
+				"background-image",
+				"url(" + $(this).attr("data-background") + ")"
+			);
+		});
+	}, 1200);
 
 	//product bxslider
 	if ($(".product-details .bxslider").length) {
