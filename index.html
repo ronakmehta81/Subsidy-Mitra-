@@ -56,7 +56,8 @@
     <!-- Preconnect for Core Web Vitals Font Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap"></noscript>
     
     <!-- Responsive Preload for LCP Hero Image -->
     <link rel="preload" as="image" href="images/banner/subsidy-mitra-slider-1-mobile.webp" media="(max-width: 767px)" fetchpriority="high">
@@ -338,7 +339,7 @@
           <!-- SLIDER 1: THE ARCHITECT & IDENTITY -->
           <div class="swiper-slide">
             <!-- Professional Consulting/Office context -->
-            <div class="slide-bg hero-slide-1" data-background="images/banner/subsidy-mitra-slider-1.webp"></div>
+            <div class="slide-bg hero-slide-1"></div>
             <div class="container">
               <div class="outer-box">
                 <div class="row g-0 align-items-end">
