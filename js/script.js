@@ -138,7 +138,7 @@ var THEMEMASCOT = {};
 		    fadeEffect: {
 		      crossFade: true,
 		    },
-		    speed: 3000,
+		    speed: 1000,
 		    autoplay: {
 		      delay: 7000,
 		      disableOnInteraction: false,
@@ -1051,5 +1051,3 @@ function sendBookingToWhatsApp(e, form) {
     var waUrl = "https://wa.me/919909999626?text=" + encodeURIComponent(waMessage);
     window.open(waUrl, '_blank');
 }
-
-
