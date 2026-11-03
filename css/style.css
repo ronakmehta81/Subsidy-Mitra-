@@ -228,12 +228,4 @@
   cursor: pointer !important;
 }
 
-/* Ensure all header logos preserve natural aspect ratio */
-.main-header .logo img,
-.sticky-header .logo img {
-  width: auto !important;
-  height: auto !important;
-  max-height: 52px !important;
-  object-fit: contain !important;
-  -o-object-fit: contain !important;
-}
+
