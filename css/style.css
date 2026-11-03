@@ -4,3 +4,156 @@
 .header-top .top-left .info-list a{color:inherit;font-weight:500;transition:color .2s ease;cursor:pointer}
 .header-top .top-left .info-list a:hover{color:var(--theme-color1)}
 .header-top .top-left .info-list a:hover i{color:var(--theme-color1)}
+
+
+/* ==========================================================================
+   Mobile Header: Perfect Center Alignment for Call Button & Hamburger Menu
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .main-header .main-box {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+
+  .main-header .main-box .outer-box {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+    gap: 14px !important;
+    margin: 0 !important;
+    height: auto !important;
+  }
+
+  .main-header .main-box .outer-box a.b {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+    line-height: 1 !important;
+  }
+
+  .main-header .main-box .outer-box a.b .custom-phone-btn {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    width: 50px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    vertical-align: middle !important;
+  }
+
+  .main-header .main-box .outer-box .mobile-nav-toggler {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    width: 44px !important;
+    height: 50px !important;
+    min-width: 44px !important;
+    min-height: 50px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    cursor: pointer !important;
+    position: relative !important;
+    top: 0 !important;
+  }
+
+  .main-header .main-box .outer-box .mobile-nav-toggler i,
+  .main-header .main-box .outer-box .mobile-nav-toggler span,
+  .main-header .main-box .outer-box .mobile-nav-toggler .icon {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    font-size: 26px !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    vertical-align: middle !important;
+    color: #1b2353 !important;
+  }
+
+  .sticky-header .inner-container {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+
+  .sticky-header .mobile-nav-toggler {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    height: 50px !important;
+    width: 44px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+  }
+
+  .sticky-header .mobile-nav-toggler i,
+  .sticky-header .mobile-nav-toggler span,
+  .sticky-header .mobile-nav-toggler .icon {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+  }
+}
