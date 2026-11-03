@@ -383,3 +383,141 @@
     margin-bottom: 18px !important;
   }
 }
+
+
+/* ==========================================================================
+   How It Works (Process Section): Mobile 2x2 Grid Layout
+   Strictly scoped to screens <= 767.98px. Desktop (>= 992px) is 100% UNTOUCHED.
+   ========================================================================== */
+@media (max-width: 767.98px) {
+  .processing-section .outer-box {
+    padding: 0 !important;
+    border: 1px dashed #d9d9d9 !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+  }
+
+  .processing-section .outer-box .row {
+    margin: 0 !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+
+  .processing-section .outer-box .row > div {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 50% !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+    padding: 0 !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  .processing-section .processing-block {
+    width: 100% !important;
+    height: 100% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+
+  .processing-section .processing-block .inner-box {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 22px 14px 20px !important;
+    text-align: center !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    background: transparent !important;
+  }
+
+  /* 4-Quadrant Divider Borders */
+  /* Quadrant 1 (top-left): right border & bottom border */
+  .processing-section .outer-box .row > div:nth-child(1) .inner-box {
+    border-right: 1px dashed #d9d9d9 !important;
+    border-bottom: 1px dashed #d9d9d9 !important;
+  }
+
+  /* Quadrant 2 (top-right): bottom border */
+  .processing-section .outer-box .row > div:nth-child(2) .inner-box {
+    border-bottom: 1px dashed #d9d9d9 !important;
+  }
+
+  /* Quadrant 3 (bottom-left): right border */
+  .processing-section .outer-box .row > div:nth-child(3) .inner-box {
+    border-right: 1px dashed #d9d9d9 !important;
+  }
+
+  /* Quadrant 4 (bottom-right): no inner border */
+  .processing-section .outer-box .row > div:nth-child(4) .inner-box {
+    border: none !important;
+  }
+
+  /* Outline Step Number */
+  .processing-section .processing-block .inner-box .number {
+    font-size: 38px !important;
+    line-height: 1 !important;
+    margin-bottom: 10px !important;
+    color: transparent !important;
+    -webkit-text-stroke: 1.5px #1a3841 !important;
+    letter-spacing: -0.5px !important;
+  }
+
+  /* Step Title */
+  .processing-section .processing-block .inner-box .title {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    line-height: 1.35 !important;
+    color: #1a3841 !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* Step Description Text */
+  .processing-section .processing-block .inner-box .text {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    color: #55627a !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .processing-section .processing-block .inner-box {
+    padding: 18px 8px 16px !important;
+  }
+  .processing-section .processing-block .inner-box .number {
+    font-size: 32px !important;
+    margin-bottom: 6px !important;
+  }
+  .processing-section .processing-block .inner-box .title {
+    font-size: 13.5px !important;
+    margin-bottom: 6px !important;
+  }
+  .processing-section .processing-block .inner-box .text {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+  }
+}
