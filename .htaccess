@@ -4,19 +4,19 @@
 Options -Indexes
 
 # ----------------------------------------------------------------------
-# 2. CANONICAL REDIRECTS (FORCE HTTPS & WWW WITH QUERY STRINGS PRESERVED)
+# 2. CANONICAL REDIRECTS (FORCE HTTPS & NON-WWW WITH QUERY STRINGS PRESERVED)
 # ----------------------------------------------------------------------
 <IfModule mod_rewrite.c>
   RewriteEngine On
   
-  # Case A: Redirect non-www to https://www (single-hop redirect)
-  RewriteCond %{HTTP_HOST} ^subsidymitra\.co\.in$ [NC]
-  RewriteRule ^(.*)$ https://www.subsidymitra.co.in/$1 [L,R=301,QSA]
-
-  # Case B: Force HTTPS for www domain
-  RewriteCond %{HTTPS} off
+  # Case A: Redirect www to https://subsidymitra.co.in
   RewriteCond %{HTTP_HOST} ^www\.subsidymitra\.co\.in$ [NC]
-  RewriteRule ^(.*)$ https://www.subsidymitra.co.in/$1 [L,R=301,QSA]
+  RewriteRule ^(.*)$ https://subsidymitra.co.in/$1 [L,R=301,QSA]
+
+  # Case B: Force HTTPS for non-www domain
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP_HOST} ^subsidymitra\.co\.in$ [NC]
+  RewriteRule ^(.*)$ https://subsidymitra.co.in/$1 [L,R=301,QSA]
 </IfModule>
 
 # ----------------------------------------------------------------------

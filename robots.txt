@@ -3,4 +3,4 @@ Allow: /
 Disallow: /404.html
 Disallow: /test-images.html
 
-Sitemap: https://www.subsidymitra.co.in/sitemap.xml
+Sitemap: https://subsidymitra.co.in/sitemap.xml
