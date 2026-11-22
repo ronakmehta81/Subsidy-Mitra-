@@ -140,7 +140,7 @@ var THEMEMASCOT = {};
 		    },
 		    speed: 1000,
 		    autoplay: {
-		      delay: 7000,
+		      delay: 12000,
 		      disableOnInteraction: false,
 		    },
 		    navigation: {
