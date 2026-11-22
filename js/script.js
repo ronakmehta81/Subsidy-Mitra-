@@ -127,8 +127,8 @@ var THEMEMASCOT = {};
 
 
 
-	// Banner four slider area start here ***
-	$(window).on("load", function () {
+	// Swiper Slider initializations on DOM Ready
+	$(function () {
 		// Banner one slider area start here ***
 		if ($(".banner-slider").length) {
 		  const bannerSwiper = new Swiper(".banner-slider", {
