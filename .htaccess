@@ -17,6 +17,10 @@ Options -Indexes
   RewriteCond %{HTTPS} off
   RewriteCond %{HTTP_HOST} ^subsidymitra\.co\.in$ [NC]
   RewriteRule ^(.*)$ https://subsidymitra.co.in/$1 [L,R=301,QSA]
+
+  # Case C: 301 Redirects for Retired Blog URLs
+  RewriteRule ^blog-prepare-perfect-dpr-bank-loans\.html$ https://subsidymitra.co.in/blog.html [L,R=301]
+  RewriteRule ^blog-atmanirbhar-bharat-schemes\.html$ https://subsidymitra.co.in/blog.html [L,R=301]
 </IfModule>
 
 # ----------------------------------------------------------------------
